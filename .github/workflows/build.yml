@@ -23,11 +23,14 @@ jobs:
         with:
           node-version: 24.x
           cache: "pnpm"
-          cache-dependency-path: chat-agent-ui/pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
         working-directory: ./chat-agent-ui
       - run: pnpm run build
         working-directory: ./chat-agent-ui
+      - run: pnpm install --frozen-lockfile
+        working-directory: ./ag-ui
+      - run: pnpm run build
+        working-directory: ./ag-ui  
       - name: Set up JDK
         uses: actions/setup-java@v5
         with:

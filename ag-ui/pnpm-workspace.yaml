@@ -1,0 +1,11 @@
+allowBuilds:
+  '@scarf/scarf': true
+minimumReleaseAgeExclude:
+  - '@copilotkit/a2ui-renderer@1.66.4'
+  - '@copilotkit/core@1.66.4'
+  - '@copilotkit/react-core@1.66.4'
+  - '@copilotkit/react-ui@1.66.4'
+  - '@copilotkit/runtime-client-gql@1.66.4'
+  - '@copilotkit/shared@1.66.4'
+  - '@copilotkit/web-components@1.66.4'
+  - '@copilotkit/web-inspector@1.66.4'
